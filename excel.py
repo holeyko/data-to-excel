@@ -28,7 +28,7 @@ class ExcellSaver:
 
         return self._sheets[index]
 
-    def add_row(self, row: list[list]) -> None:
+    def add_row(self, row: list) -> None:
         self.__cur_sheet__().add_row(row)
 
     def add_new_sheet(self, cols: list[str], name: str = '') -> None:
